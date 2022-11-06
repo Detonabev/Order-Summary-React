@@ -1,38 +1,232 @@
 .App {
   text-align: center;
 }
+*{
+  margin: 0;
+  padding: 0;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+body{
+  background-image: url(./Assets/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  margin: 40px;
+}
+/* Home */ 
+.home span{
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+@media screen and (max-width: 480px) {
+  /* body{
+    background-image: url(./Assets/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    margin: 30px;
+  } */
+  .home{
+      background-color: aliceblue;
+      border-radius: 20px;
+      /* border-bottom-left-radius: 20px; */
+      /* border-bottom-right-radius: 20px; */
+      /* overflow: hidden; */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .hero{
+    width:100% ;
+    /* margin-top: 30px; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .text h2{
+    line-height: 2;
+    margin: 10px 0px;
+    color: gray;
+    letter-spacing: 0.5px; 
   }
+  .text p{
+    line-height: 1.8;
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+  }
+  .plan{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(230, 218, 241);
+    position: relative;
+    left: 20px;
+    margin: 20px 0px;
+    line-height: 1.3;
+  }
+  .sub-plan{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px; 
+  }
+  button{
+    width: 80%;
+    margin: 18px;
+    height: 40px;
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+    box-shadow: 10px 10px 20px rgb(132, 132, 240);
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  button:hover{
+    background-color: aliceblue;
+    color: blue;
+    
+  }
+  
+}
+/* Tablet size */
+@media screen and (min-width:480px) and (max-width:1024px) {
+  .home{
+    width: 50vw;                       
+    justify-content: center;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 20px;
+    /* border-bottom-left-radius: 20px; */
+    /* border-bottom-right-radius: 20px; */
+    /* overflow-y: hidden; */
+  }
+  .hero{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* overflow: hidden; */
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+  }
+  .text h2{
+    line-height: 2;
+    /* margin: 10px 0px; */
+    color: gray;
+    letter-spacing: 0.5px; 
+  }
+  .text p{
+    line-height: 1.8;
+  }
+  .plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+    left: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(230, 218, 241);
+    margin: 16px 0px;
+    line-height: 1.5;
+    
+  }
+  .sub-plan{
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px ;
+  }
+  button{
+    width: 80%;
+    margin: 18px;
+    height: 40px;
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+    box-shadow: 10px 10px 20px rgb(132, 132, 240);
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  button:hover{
+    background-color: aliceblue;
+    color: blue;
+    
+  }
+  
+}
+/* (min-device-width: 1024px) and */
+@media screen and  (min-width:1024px ) {
+  .home{
+    width: 40vw;                       
+    justify-content: center;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 20px;
+    /* border-bottom-left-radius: 20px; */
+    /* border-bottom-right-radius: 20px; */
+    /* overflow-y: hidden; */
+  }
+  .hero{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* overflow: hidden; */
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+  }
+  .text h2{
+    line-height: 2;
+    /* margin: 10px 0px; */
+    color: gray;
+    letter-spacing: 0.5px; 
+  }
+  .text p{
+    line-height: 1.8;
+  }
+  .plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 87%;
+    position: relative;
+    left: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(230, 218, 241);
+    margin: 16px 0px;
+    line-height: 1.9;
+  }
+  .sub-plan{
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px ;
+  }
+  /* .icon{
+    position: relative;
+    left: 10px;
+    right: 7px;
+  } */
+  button{
+    width: 80%;
+    margin: 18px;
+    height: 40px;
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+    box-shadow: 10px 10px 20px rgb(132, 132, 240);
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+  
+  }
+  button:hover{
+    background-color: aliceblue;
+    color: blue;
+    
+  }
+  
 }
