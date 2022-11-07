@@ -8,7 +8,8 @@
 }
 body{
   background-image: url(./Assets/pattern-background-desktop.svg);
-  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: repeat-x;
   margin: 40px;
 }
 /* Home */ 
